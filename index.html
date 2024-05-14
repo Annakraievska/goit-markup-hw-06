@@ -27,7 +27,7 @@
 
   <body>
     <!--header-->
-    <header class="header">
+    <header class="header ">
       <div class="container header-container">
         <nav class="pade-navigation">
           <a class="logo" href="./index.html"
@@ -54,6 +54,11 @@
             </li>
           </ul>
         </address>
+        <button class="btn-burger" type="button">
+          <svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--hero-->
@@ -66,7 +71,7 @@
       </section>
 
       <!-- advantages -->
-      <section class="section-advantages">
+      <section class="section-advantages hidden">
         <div class="container">
           <h2 class="visually-hidden">Work</h2>
           <ul class="advantages-list">
@@ -122,7 +127,7 @@
         </div>
       </section>
       <!-- team -->
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="section-team">Our Team</h2>
           <ul class="team-list">
@@ -303,7 +308,7 @@
       </section>
       <!-- Portfolio -->
 
-      <section class="section-portfolio">
+      <section class="section-portfolio hidden">
         <div class="container portfolio-conteiner">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-time">
@@ -438,7 +443,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-container">
         <div class="footer-one">
           <a class="studio-first" href="./index.html"
@@ -525,7 +530,7 @@
       </div>
     </footer>
     <!-- Window Modal form -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-btn-icone" width="8" height="8">
@@ -627,6 +632,77 @@
           </div>
           <button class="callback-form-send-button" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile menu hidden">
+      <div class="container hidden">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-btn-icon" width="" height="">
+            <use href=""></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ui class="mobile-menu-list">
+            <li class="mobile-menu-list-item">
+              <a class="mobile-menu-list-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a class="mobile-menu-list-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a class="mobile-menu-list-link" href="">Contacts</a>
+            </li>
+          </ui>
+        </nav>
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li class="mobile-menu-address-list-item">
+              <a
+                class="mobile-menu-address-list-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu-address-list-item">
+              <a class="mobile-menu-address-list-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-sokials-list">
+          <li class="mobile-menu-sokials-list-item">
+            <a class="mobile-menu-sokials-list-link" href=""
+              ><svg class="mobile-menu-sokials-icone" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-sokials-list-item">
+            <a class="mobile-menu-sokials-list-link" href=""
+              ><svg class="mobile-menu-sokials-icone" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-sokials-list-item">
+            <a class="mobile-menu-sokials-list-link" href=""
+              ><svg class="mobile-menu-sokials-icone" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-sokials-list-item">
+            <a class="mobile-menu-sokials-list-link" href=""
+              ><svg class="mobile-menu-sokials-icone" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
       </div>
     </div>
   </body>
