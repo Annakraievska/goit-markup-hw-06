@@ -910,17 +910,32 @@ team 768
   .section-advantages {
     padding: 120px 0;
   }
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
   .page-advantages-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    margin-bottom: 8px;
-    box-sizing: border-box;
-    border: 1px solid rgb(142, 143, 153);
-    border-radius: 4px;
-    background-color: #f4f4fd;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 112px;
+  margin-bottom: 8px;
+  border: 1px solid rgb(142, 143, 153);
+  border-radius: 4px;
+  background-color: #f4f4fd;
+}
   }
+  .advantages-icon {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 112px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+}
   .advantages-title {
     font-size: 20px;
   }
