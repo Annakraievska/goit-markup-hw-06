@@ -255,7 +255,7 @@ common
   margin-right: auto;
   padding-top: 72px;
   margin-bottom: 72px;
-  width: 320px;
+  max-width: 320px;
   height: 432px;
   background-color: #2e2f42;
   background-size: cover;
@@ -501,12 +501,185 @@ portfilso 320
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* ========================================================================================================================================================
+foter
+======================================================================================================================================================== */
+.page-footer {
+  padding: 96px 0;
+  background-color: #2e2f42;
+  height: 664px;
+}
+.footer-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.studio-first {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.web-titl {
+  color: #f4f4fd;
+  line-height: 1.17;
+  font-family: "Raleway", sans-serif;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  text-align: center;
+}
+
+.page-footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+}
+
+.footer-one {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page-footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  font-family: "Roboto", sans-serif;
+  max-width: 264px;
+}
+.page-footer {
+  background: #2e2f42;
+  padding: 100px 0;
+}
+.subtitle-footer {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-items {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-list {
+  width: 40px;
+  height: 40px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social {
+  fill: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-subscribe-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+}
+.footer-subscribe-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer-subscribe-label {
+  display: flex;
+}
+.footer-subscribe-input {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
+  background-color: transparent;
+}
+.footer-subscribe-input::placeholder {
+  color: #ffffff;
+}
+.footer-subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button-icon {
+  margin-left: 16px;
+  fill: #ffffff;
+}
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: #404bbf;
+}
 
 /* ========================================================================================================================================================
                                    header tablet 768
 ======================================================================================================================================================== */
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   .btn-burger {
     display: none;
   }
@@ -579,7 +752,7 @@ portfilso 320
 hero tablet 768
 ======================================================================================================================================================== */
   .title {
-    width: 768px;
+    max-width: 768px;
     height: 436px;
     padding-top: 122px;
     background-image: linear-gradient(
@@ -645,6 +818,34 @@ team 768
   .section-portfolio .container {
     max-width: 768px;
   }
+  /* ========================================================================================================================================================
+  foter 768
+  ======================================================================================================================================================== */
+  .page-footer {
+  }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 108px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-subscribe-form {
+    gap: 24px;
+    flex-direction: row;
+  }
+  .footer-one {
+    flex-direction: column;
+  }
+  .footer-subscribe-block {
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .footer-two {
+    flex-direction: column;
+  }
 }
 /* ========================================================================================================================================================
                                      header 1158
@@ -652,7 +853,7 @@ team 768
 
 @media screen and (min-width: 1158px) {
   .container {
-    min-width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -725,7 +926,6 @@ team 768
   }
   .advantages-list-item {
     width: calc((100% - 72px) / 4);
-    margin-bottom: 72px;
   }
   .advantages-list {
     display: flex;
@@ -754,168 +954,129 @@ team 768
   .portfolio-list {
     width: calc((100% - 48px) / 3);
   }
-}
-/* ========================================================================================================================================================
+
+  /* ========================================================================================================================================================
                                    footer 1158
 ======================================================================================================================================================== */
 
+  .web-titl {
+    color: #f4f4fd;
+    line-height: 1.17;
+    font-family: "Raleway", sans-serif;
+  }
+  .footer-container {
+    padding: 100px 0;;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: nowrap;
+        gap: 0;
+        justify-content: space-evenly;
+
+    }
+  }
+
+  .footer-one {
+    margin-right: 120px;
+  }
+
+  .page-footer {
+    background: #2e2f42;
+    padding: 100px 0;
+  }
+  .subtitle-footer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+
+  .footer-items {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-list {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social {
+    fill: #f4f4fd;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-link:hover,
+  .footer-link:focus {
+    background-color: #31d0aa;
+  }
+
+  .footer-subscribe-block {
+    margin-left: 0;
+  }
+
+  .footer-subscribe-form {
+    flex-direction: row;
+  }
+  .footer-subscribe-label {
+    display: flex;
+  }
+
+  .footer-subscribe-input::placeholder {
+    color: #ffffff;
+  }
+
+  .subscribe-button-icon {
+    margin-left: 16px;
+    fill: #ffffff;
+  }
+  .footer-subscribe-button:hover,
+  .footer-subscribe-button:focus {
+    background-color: #404bbf;
+  }
+}
+
 /* ========================================================================================================================================================
-                                      footer
+min-resolution: 192dpi
 ======================================================================================================================================================== */
-.page-footer {
-  padding: 96px 0;
-  background-color: #2e2f42;
-  height: 664px;
-}
-.studio-first {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  display: inline-block;
-}
-.web-titl {
-  color: #f4f4fd;
-  line-height: 1.17;
-  font-family: "Raleway", sans-serif;
-}
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/sektion/dark320@2x-min.jpg);
+  }
 }
 
-.page-footer-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  color: #4d5ae5;
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
+  .title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/sektion/Dark-768@2x-min.jpg);
+  }
 }
-
-.footer-one {
-  margin: 0 auto 72px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.page-footer-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  font-family: "Roboto", sans-serif;
-  max-width: 264px;
-}
-.page-footer {
-  background: #2e2f42;
-  padding: 100px 0;
-}
-.subtitle-footer {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-.footer-items {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-}
-.footer-list {
-  width: 40px;
-  height: 40px;
-}
-.footer-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social {
-  fill: #f4f4fd;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-link:hover,
-.footer-link:focus {
-  background-color: #31d0aa;
-}
-
-.footer-subscribe-block {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: auto;
-}
-.footer-subscribe-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-.footer-subscribe-form {
-  display: flex;
-  gap: 24px;
-}
-.footer-subscribe-label {
-  display: flex;
-}
-.footer-subscribe-input {
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  padding-left: 16px;
-  background-color: transparent;
-}
-.footer-subscribe-input::placeholder {
-  color: #ffffff;
-}
-.footer-subscribe-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 165px;
-  height: 40px;
-  border: none;
-  border-radius: 4px;
-  background-color: #4d5ae5;
-  color: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  font-weight: 500;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe-button-icon {
-  margin-left: 16px;
-  fill: #ffffff;
-}
-.footer-subscribe-button:hover,
-.footer-subscribe-button:focus {
-  background-color: #404bbf;
+@media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+  .title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/sektion/dark1158@2x-min.jpg);
+  }
 }
